@@ -1,0 +1,58 @@
+/*
+style.css
+---------
+ 
+Par Mathieu Nebra
+*/
+@font-face { /* Définition d'une nouvelle police nommée LearningCurveProRegular */
+    font-family: 'LearningCurveProRegular';
+    src: url('LearningCurve_OT-webfont.eot');
+    src: url('LearningCurve_OT-webfont.eot?#iefix') format('embedded-opentype'),
+         url('LearningCurve_OT-webfont.woff') format('woff'),
+         url('LearningCurve_OT-webfont.ttf') format('truetype'),
+         url('LearningCurve_OT-webfont.svg#LearningCurveProRegular') format('svg');
+}
+
+.imageflottante
+{
+    float: left;
+}
+.dessous
+{
+    clear: both;
+}
+body
+{
+    font-family: Arial, Verdana, sans-serif;
+    background-color: black; /* Le fond de la page sera noir */
+    color: white; /* Le texte de la page sera blanc */
+}
+h1 /* Utilisation de la police qu'on vient de définir sur les titres */
+{
+    color:red;
+    font-family: 'LearningCurveProRegular', Arial, serif;
+    text-decoration: underline;
+}
+
+ul
+{
+    border-bottom: 2px solid white;
+    width: 50%;
+}
+
+a /* Liens par défaut (non survolés) */
+{
+   text-decoration: none;
+   color: red;
+   font-style: italic;
+}
+p
+{
+  width: 50%;
+  margin: 10px;
+}
+a:hover /* Apparence au survol des liens */
+{
+   text-decoration: underline;
+   color: green;
+}
